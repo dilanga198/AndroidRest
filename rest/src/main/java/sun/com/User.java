@@ -2,13 +2,7 @@ package sun.com;
 
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: nimantha
- * Date: 10/9/13
- * Time: 11:41 AM
- * To change this template use File | Settings | File Templates.
- */
+
 public class User {
 
     public enum STATUS{
