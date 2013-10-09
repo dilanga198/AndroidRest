@@ -9,13 +9,26 @@ package sun.com;
  */
 public class Task {
 
+    public enum TASK_STATUS{
+        pending,completed
+    }
     private String id;
     private String tName;
     private String tType;
     private String srartedAt;
     private String expire;
-    private String status;
-    private String descrioion;
+    private TASK_STATUS  status;
+    private String description;
+
+    public Task(String id, String tName, String tType, String srartedAt, String expire, TASK_STATUS status, String description) {
+        this.id = id;
+        this.tName = tName;
+        this.tType = tType;
+        this.srartedAt = srartedAt;
+        this.expire = expire;
+        this.status = status;
+        this.description = description;
+    }
 
     public String getId() {
         return id;
@@ -57,19 +70,19 @@ public class Task {
         this.expire = expire;
     }
 
-    public String getStatus() {
+    public TASK_STATUS  getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(TASK_STATUS  status) {
         this.status = status;
     }
 
-    public String getDescrioion() {
-        return descrioion;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescrioion(String descrioion) {
-        this.descrioion = descrioion;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
