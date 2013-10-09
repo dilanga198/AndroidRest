@@ -1,2 +1,2 @@
-/home/nimantha/learn/LayoutDesign/bin/AndroidManifest.xml : \
-/home/nimantha/learn/LayoutDesign/AndroidManifest.xml \
+/home/nimantha/git/AndroidRest/cd/bin/AndroidManifest.xml : \
+/home/nimantha/git/AndroidRest/cd/AndroidManifest.xml \
