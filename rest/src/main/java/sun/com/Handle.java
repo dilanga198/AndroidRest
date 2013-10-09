@@ -12,13 +12,6 @@ import javax.ws.rs.core.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * Created with IntelliJ IDEA.
- * User: nimantha
- * Date: 10/9/13
- * Time: 11:50 AM
- * To change this template use File | Settings | File Templates.
- */
 @Path("/login")
 public class Handle {
 
