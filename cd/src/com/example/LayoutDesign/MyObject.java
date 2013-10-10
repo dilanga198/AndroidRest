@@ -6,8 +6,8 @@ import com.google.gson.annotations.SerializedName;
 public class MyObject {
 
 
-    @SerializedName("UserId")
-    public String UserId;
+    @SerializedName("UserName")
+    public String UserName;
     @SerializedName("Pass")
     public String Pass;
     @SerializedName("Time")
@@ -29,7 +29,7 @@ public class MyObject {
 
     public MyObject(){
 
-        UserId = "John";
+        UserName = "John";
         Pass = "123";
         setTime();
     }
