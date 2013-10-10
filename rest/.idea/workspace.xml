@@ -6,12 +6,13 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/User.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381308945829" ignored="false" />
     <file path="/Permission.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381299982833" ignored="false" />
-    <file path="/Task.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381313163537" ignored="false" />
+    <file path="/Task.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381299470844" ignored="false" />
     <file path="/web.xml" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381300675293" ignored="false" />
     <file path="$USER_HOME$/rest examples/rest-json-ws-android/src/main/java/org/ai/PersonResource.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381299667624" ignored="false" />
     <file path="/Handle.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381308964325" ignored="false" />
     <file path="/index.jsp" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381300727979" ignored="false" />
     <file path="$USER_HOME$/rest examples/rest-json-ws-android/pom.xml" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381304250308" ignored="false" />
+<<<<<<< HEAD
     <file path="$PROJECT_DIR$/../cd/AndroidManifest.xml" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381379471032" ignored="false" />
     <file path="/PendingTasks.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381314977637" ignored="false" />
     <file path="/TaskList.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381314840589" ignored="false" />
@@ -28,6 +29,12 @@
     <file path="$PROJECT_DIR$/../cd/bin/classes.dex.d" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381380178908" ignored="false" />
     <file path="$PROJECT_DIR$/../cd/bin/AndroidManifest.xml" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381379752687" ignored="false" />
     <file path="$PROJECT_DIR$/../cd/gen/com/example/LayoutDesign/R.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381380307448" ignored="false" />
+=======
+    <file path="$USER_HOME$/git/AndroidRest/cd/AndroidManifest.xml" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381310053182" ignored="false" />
+    <file path="/ReturnUser.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381317985636" ignored="false" />
+    <file path="/UserList.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381317958971" ignored="false" />
+    <file path="/UpdateUser.java" changelist="4e13d123-d2ab-4372-904e-8d91c63f8783" time="1381319993299" ignored="false" />
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +94,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/User.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="66" column="18" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
+=======
+            <state line="89" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
               <folding />
             </state>
           </provider>
@@ -108,7 +119,7 @@
       <file leaf-file-name="Task.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="27" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+            <state line="32" column="27" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,13 +128,18 @@
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="15" column="14" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
+=======
+            <state line="15" column="31" selection-start="595" selection-end="595" vertical-scroll-proportion="-7.7586207">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
               <folding />
             </state>
           </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
           </provider>
+<<<<<<< HEAD
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
           </provider>
@@ -146,19 +162,46 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="31" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
               <folding />
+=======
+        </entry>
+      </file>
+      <file leaf-file-name="ReturnUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/ReturnUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="40" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="UpdateUser.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/UpdateUser.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="48" selection-start="725" selection-end="725" vertical-scroll-proportion="0.39893618">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="89" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0">
+=======
+            <state line="2" column="25" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="TaskList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/TaskList.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -173,10 +216,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="61" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
               <folding />
+=======
+      <file leaf-file-name="Handle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Handle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="27" selection-start="483" selection-end="1971" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="UpdateTask.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/UpdateTask.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -188,6 +241,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
     </leaf>
   </component>
   <component name="FindManager">
@@ -198,12 +253,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/Permission.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/Handle.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/sun/com/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/TaskList.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/PendingTasks.java" />
@@ -211,6 +268,15 @@
         <option value="$PROJECT_DIR$/src/main/java/sun/com/ViewPendingTasks.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/ViewTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/com/UpdateTask.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/User1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/User2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/UserList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/ReturnUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/UpdateProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/com/UpdateUser.java" />
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
       </list>
     </option>
   </component>
@@ -470,7 +536,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-9" y="19" width="1384" height="758" extended-state="0" />
+=======
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -560,6 +630,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/ViewPendingTasks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="61" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
@@ -568,6 +639,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/UpdateTask.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Permission.java">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="46" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
           <folding>
@@ -585,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
+        <state line="15" column="31" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -609,18 +683,30 @@
         <state line="69" column="17" selection-start="2676" selection-end="2676" vertical-scroll-proportion="-1.1818181" />
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/install/java/jdk1.6.0_33/jre/lib/plugin.jar!/sun/plugin/javascript/navig5/JSObject.class">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="23" column="11" selection-start="920" selection-end="920" vertical-scroll-proportion="0.33268103" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="26" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+=======
+        <state line="89" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="27" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="18" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
@@ -638,10 +724,22 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Task.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="27" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="595" selection-end="595" vertical-scroll-proportion="-7.7586207">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="0" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0">
@@ -652,6 +750,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/TaskList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="21" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
           <folding />
         </state>
       </provider>
@@ -665,6 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/ViewTask.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="35" column="31" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -673,12 +777,46 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/UpdateTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="29" selection-start="495" selection-end="495" vertical-scroll-proportion="0.6309751">
+=======
+        <state line="18" column="41" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1404#1410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/ReturnUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="40" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/Handle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="27" selection-start="483" selection-end="1971" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/com/UpdateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="48" selection-start="725" selection-end="725" vertical-scroll-proportion="0.39893618">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> f8ab15a9733e9f5cd9fb78d42388853c4e0243b6
   </component>
   <component name="masterDetails">
     <states>
