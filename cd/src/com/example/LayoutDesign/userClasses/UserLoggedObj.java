@@ -1,14 +1,14 @@
-package com.example.LayoutDesign;
+package com.example.LayoutDesign.userClasses;
 
 import android.text.format.Time;
 import com.google.gson.annotations.SerializedName;
 
-public class MyObject {
+public class UserLoggedObj {
 
 
-    @SerializedName("UserName")
+    @SerializedName("userName")
     public String UserName;
-    @SerializedName("Pass")
+    @SerializedName("password")
     public String Pass;
     @SerializedName("Time")
     public String Time;
@@ -27,7 +27,7 @@ public class MyObject {
 
 
 
-    public MyObject(){
+    public UserLoggedObj(){
 
         UserName = "John";
         Pass = "123";

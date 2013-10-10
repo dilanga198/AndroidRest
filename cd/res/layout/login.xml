@@ -3,13 +3,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_height="fill_parent" >
 
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="60dp" >
+            android:layout_height="60dp" android:padding="5dp" >
 
         <include android:id="@+id/bar" layout="@layout/template_bar_logged" />
     </LinearLayout>
@@ -23,21 +23,28 @@
         <LinearLayout
 
                 android:layout_width="100dp"
-                android:layout_height="200dp" android:layout_gravity="left|center_vertical|top|left">
+                android:layout_height="240dp" android:layout_gravity="left|center_vertical|top|left" android:padding="5dp">
 
             <include android:id="@+id/list" layout="@layout/template_list" />
         </LinearLayout>
 
         <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="200dp"
-                android:layout_height="300dp" android:layout_gravity="right">
+                android:layout_width="220dp"
+                android:layout_height="240dp" android:layout_gravity="right" android:padding="5dp">
 
-            <include android:id="@+id/myid2" layout="@layout/template_login"/>
+            <include android:id="@+id/login_layout" layout="@layout/template_login"/>
         </LinearLayout>
 
 
     </LinearLayout>
 
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" android:padding="2dp" >
+
+        <include android:id="@+id/footer" layout="@layout/template_footer" />
+    </LinearLayout>
 
 </LinearLayout>

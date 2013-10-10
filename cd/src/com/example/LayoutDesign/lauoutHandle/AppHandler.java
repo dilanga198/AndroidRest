@@ -1,5 +1,7 @@
 package com.example.LayoutDesign.lauoutHandle;
 
+import com.example.LayoutDesign.userClasses.User;
+
 import java.util.ArrayList;
 
 /**
@@ -19,6 +21,25 @@ public class AppHandler {
         listView11.add("Mobile");
         listView11.add("Solutions");
         return listView11;
+    }
+
+    private static ArrayList<String> permissionList = new ArrayList<String>();
+
+    public static void setPermissionList(String permission) {
+        AppHandler.permissionList.add(permission);
+    }
+
+    public static ArrayList<String> getPermissionList() {
+        return permissionList;
+    }
+
+    public static User.STATUS getUserStatus(String status){
+
+        if(status.equals("active"))
+            return User.STATUS.active;
+
+        else
+            return User.STATUS.deactive;
     }
 }
 
