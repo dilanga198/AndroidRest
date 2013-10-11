@@ -17,7 +17,9 @@ public class Permission {
         description =des ;
     }
 
+    public Permission(){
 
+    }
 
     public String getpName() {
         return pName;

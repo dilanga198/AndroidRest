@@ -5,13 +5,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: nimantha
- * Date: 10/10/13
- * Time: 3:00 PM
- * To change this template use File | Settings | File Templates.
- */
 public class User {
     public enum STATUS{
         active, deactive
@@ -22,10 +15,15 @@ public class User {
     public String password;
     @SerializedName("Time")
     public String Time;
+    @SerializedName("firstName")
     private String firstName;
+    @SerializedName("lasName")
     private String lasName;
+    @SerializedName("permissionList")
     private ArrayList<Permission> permissionList = new ArrayList<Permission>();
+    @SerializedName("status")
     private STATUS  status;
+    @SerializedName("lastActivityTime")
     private String lastActivityTime;
 
     public User() {

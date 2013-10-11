@@ -111,33 +111,21 @@ public class LogIn extends Activity {
                             TextView footerText=(TextView)findViewById(R.id.footer_text);
                             footerText.setText("Welcome "+androidClient.getFistName()+", logged in as: "+androidClient.getUserName());
 
-                            System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"+permissionStrings.get(0));
                             //error saying should apply array adapter to a text view not a list view
                            /* ArrayAdapter<String> arrayAdapter =
                                     new ArrayAdapter<String>(context, android.R.layout.simple_list_item_2, permissionStrings);
                                     lv.setAdapter(arrayAdapter); */
 
 
-
-
-
-
-
-                          /*  User obj = new User(userName.toString(), password.toString());
-                            obj.userName = userName.getText().toString();
-
-                            Log.d(TAG, "index=" + obj.userName);
-
-                            obj.password = password.getText().toString();
-
                             SharedPreferences appSharedPrefs = PreferenceManager.getDefaultSharedPreferences(LogIn.this);
                             Editor prefsEditor = appSharedPrefs.edit();
                             Gson gson = new Gson();
-                            String json = gson.toJson(androidClient); //edited must test
+                            String json = gson.toJson(androidClient);
                             prefsEditor.putString("UserLoggedObj", json);
-                            prefsEditor.commit();     */
+                            prefsEditor.commit();
 
-                           // startActivity(new Intent(LogIn.this, MyActivity.class));
+
+                            startActivity(new Intent(LogIn.this, MyActivity.class));
 
                         } else {
                             Toast loginError = Toast.makeText(getApplicationContext(), "Invalid user name or password\nUser Authentication failed", Toast.LENGTH_LONG);
