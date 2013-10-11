@@ -11,5 +11,6 @@
             android:text="this text goes to footer"
             android:id="@+id/footer_text" android:layout_gravity="center_horizontal|top" android:paddingLeft="5dp" android:paddingRight="30dp"/>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home"
-            android:id="@+id/footer_home" android:layout_gravity="center_horizontal|top"/>
+            android:id="@+id/footer_home" android:layout_gravity="center_horizontal|top"
+            android:padding="5dp" android:background="@color/button_bg_color" android:textColor="@color/button_text_color" />
 </LinearLayout>

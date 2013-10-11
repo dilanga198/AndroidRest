@@ -1,8 +1,12 @@
 package com.example.LayoutDesign.lauoutHandle;
 
-import com.example.LayoutDesign.userClasses.User;
+
+import com.example.LayoutDesign.userClasses.*;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,7 +17,7 @@ import java.util.ArrayList;
  */
 public class AppHandler {
 
-    private static Boolean isLoggedin=false ;
+    private static Boolean isLoggedin = false;
     private static ArrayList<String> listView11 = new ArrayList<String>();
 
     public static ArrayList<String> getListView11() {
@@ -33,13 +37,39 @@ public class AppHandler {
         return permissionList;
     }
 
-    public static User.STATUS getUserStatus(String status){
+    public static User.STATUS getUserStatus(String status) {
 
-        if(status.equals("active"))
+        if (status.equals("active"))
             return User.STATUS.active;
 
         else
             return User.STATUS.deactive;
+    }
+
+    public static User convertJson2User(JSONObject jsnobj, String password) throws Exception{
+        User user = new User();
+        user.setFistName(jsnobj.getString("firstName"));
+        user.setLasName(jsnobj.getString("firstName"));
+        user.setUserName(jsnobj.getString("userName"));
+        user.setStatus(AppHandler .getUserStatus(jsnobj.getString("status")));
+        user.setPassword(password );
+        user.setTime();
+        JSONArray jPermissionArray=jsnobj.getJSONArray("permissionList");
+
+        ArrayList<Permission> permissionList=new ArrayList<Permission>();
+        for(int i=0;i<jPermissionArray.length();i++){
+            permissionList.add(
+                    new Permission(
+                            jPermissionArray.getJSONObject(i).getString("pName"),
+                            jPermissionArray.getJSONObject(i).getString("description"))
+                            );
+        }
+        user.setPermissionList(permissionList);
+        user.setLastActivityTime(jsnobj.getString("lastActivityTime"));
+
+
+        return user;
+
     }
 }
 

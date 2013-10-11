@@ -1,6 +1,7 @@
 /home/nimantha/git/AndroidRest/cd/bin/classes.dex : \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/R$attr.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/R$layout.class \
+/home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/R$color.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/userClasses/User$STATUS.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/userClasses/ApplicationLists.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/userClasses/Task$TASK_STATUS.class \

@@ -1,10 +1,12 @@
 package com.example.LayoutDesign.lauoutHandle;
 
 import android.app.Activity;
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.*;
-import com.example.LayoutDesign.userClasses.User;
+import com.example.LayoutDesign.userClasses.*;
 import com.example.LayoutDesign.R;
 
 
@@ -26,9 +28,12 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 import org.json.JSONObject;
 
+import javax.xml.transform.sax.SAXSource;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringReader;
+import java.util.ArrayList;
 
 
 public class LogIn extends Activity {
@@ -41,11 +46,9 @@ public class LogIn extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        ListView lv = (ListView) findViewById(R.id.listview);
+        final ListView lv = (ListView) findViewById(R.id.listview);
+        final Context context=this;
 
-        ArrayAdapter<String> arrayAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, AppHandler.getListView11());
-        lv.setAdapter(arrayAdapter);
 
 
         /*********************new********************/
@@ -79,8 +82,7 @@ public class LogIn extends Activity {
                     loginError.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
                     loginError.show();
 
-                }
-                else {
+                } else {
                     String sampleURL = SERVICE_URL + "/login/user/" + userName.getText().toString() + "," + password.getText().toString();
                     HttpClient httpClient = new DefaultHttpClient();
                     HttpContext localContext = new BasicHttpContext();
@@ -91,58 +93,61 @@ public class LogIn extends Activity {
                         HttpEntity entity = response.getEntity();
                         text = getASCIIContentFromEntity(entity);
 
-
-                        JSONObject jObject = new JSONObject(text);
-
-                        //put this to User object
-                        //like this
-                        /*User androidClient=new User(
-                        jObject.getString("firstName"),
-                        jObject.getString("lasName"),
-                        jObject.getString("userName"),
-                        jObject.getJSONArray("permissionList"),
-                        AppHandler .getUserStatus(jObject.getString("status")),
-                        jObject.getString("lastActivityTime")
-
-                        );    */
-                        String lname=jObject.getString("lastActivityTime");
-
-                        //
+                        if (!text.equals("error")) {
+                            JSONObject jObject = new JSONObject(text);
 
 
-                        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$"+lname);
+                            User androidClient=AppHandler.convertJson2User(jObject, pwdS );
 
-                        Toast success = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
-                        success.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                        success.show();
+                            ArrayList<String> permissionStrings=new ArrayList<String>();
+                            for(Permission name:androidClient.getPermissionList()){
+                                permissionStrings.add(name.getpName());
+                            }
 
-                        if (!text.equals("error")){
+                            Toast success = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG);
+                            success.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                            success.show();
 
-                            TextView tv=(TextView)findViewById(R.id.footer_text);
+                            TextView footerText=(TextView)findViewById(R.id.footer_text);
+                            footerText.setText("Welcome "+androidClient.getFistName()+", logged in as: "+androidClient.getUserName());
+
+                            System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"+permissionStrings.get(0));
+                            //error saying should apply array adapter to a text view not a list view
+                           /* ArrayAdapter<String> arrayAdapter =
+                                    new ArrayAdapter<String>(context, android.R.layout.simple_list_item_2, permissionStrings);
+                                    lv.setAdapter(arrayAdapter); */
 
 
-                        }
 
+
+
+
+
+                          /*  User obj = new User(userName.toString(), password.toString());
+                            obj.userName = userName.getText().toString();
+
+                            Log.d(TAG, "index=" + obj.userName);
+
+                            obj.password = password.getText().toString();
+
+                            SharedPreferences appSharedPrefs = PreferenceManager.getDefaultSharedPreferences(LogIn.this);
+                            Editor prefsEditor = appSharedPrefs.edit();
+                            Gson gson = new Gson();
+                            String json = gson.toJson(androidClient); //edited must test
+                            prefsEditor.putString("UserLoggedObj", json);
+                            prefsEditor.commit();     */
+
+                           // startActivity(new Intent(LogIn.this, MyActivity.class));
+
+                        } else {
+                            Toast loginError = Toast.makeText(getApplicationContext(), "Invalid user name or password\nUser Authentication failed", Toast.LENGTH_LONG);
+                            loginError.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                            loginError.getView().setBackgroundColor(Color.DKGRAY);
+                            loginError.show();
+
+                            }
                     } catch (Exception e) {
                         userName.setText(e.toString());
-                    }
-
-                    if (!text.equals("error")) {
-                        User obj = new User(userName.toString() ,password.toString() );
-                        obj.userName = userName.getText().toString();
-
-                        Log.d(TAG, "index=" + obj.userName);
-
-                        obj.password = password.getText().toString();
-
-                        SharedPreferences appSharedPrefs = PreferenceManager.getDefaultSharedPreferences(LogIn.this);
-                        Editor prefsEditor = appSharedPrefs.edit();
-                        Gson gson = new Gson();
-                        String json = gson.toJson(obj);
-                        prefsEditor.putString("UserLoggedObj", json);
-                        prefsEditor.commit();
-
-                        startActivity(new Intent(LogIn.this, MyActivity.class));
                     }
                 }
             }

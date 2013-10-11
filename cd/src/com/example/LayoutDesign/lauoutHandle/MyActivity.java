@@ -8,7 +8,6 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.*;
 import com.example.LayoutDesign.userClasses.User;
-import com.example.LayoutDesign.userClasses.UserLoggedObj;
 import com.example.LayoutDesign.R;
 import com.google.gson.Gson;
 

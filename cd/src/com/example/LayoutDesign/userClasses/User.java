@@ -28,7 +28,24 @@ public class User {
     private STATUS  status;
     private String lastActivityTime;
 
+    public User() {
+    }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getTime() {
+        return Time;
+    }
+
+    public void setTime(String time) {
+        Time = time;
+    }
 
     public User(String fistName, String lasName, String userName, ArrayList<Permission> permissionList, STATUS  status, String lastActivityTime) {
         this.firstName = fistName;
