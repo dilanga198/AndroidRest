@@ -20,34 +20,25 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
         Button login = (Button) findViewById(R.id.bar_log);
         TextView title = (TextView) findViewById(R.id.bar_title);
 
 
         try {
-            SharedPreferences appSharedPrefs = PreferenceManager.getDefaultSharedPreferences(MyActivity.this);
-            Gson gson = new Gson();
-            if (appSharedPrefs.contains("LoggedUserObj")) {
+            if(AppHandler.checkUserSession(PreferenceManager.getDefaultSharedPreferences(MyActivity.this), "HOME")){
 
-                System.out.println("sdfsdfsdfsdfsdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ------------- came");
-                String json = appSharedPrefs.getString("LoggedUserObj", "");
-                User userobj = gson.fromJson(json, User.class);
-                title.setText(appSharedPrefs.getString("LoggedUserObj", ""));
-
-
-                if (!userobj.userName.toString().equals("")) {
-                    login.setText("Log out");
-                    title.setText("Logged in as " + userobj.userName.toString());
-
-
-                }
+              title.setText("Changed");
             }
+            else{
+                title.setText("Please log");
 
+            }
         } catch (Exception e) {
-
-            System.out.println("#######################" + e.toString());
+            title.setText("err " +e.toString());
         }
+
+
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,7 +1,10 @@
 package com.example.LayoutDesign.lauoutHandle;
 
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import com.example.LayoutDesign.userClasses.*;
+import com.google.gson.Gson;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -51,8 +54,8 @@ public class AppHandler {
         user.setFistName(jsnobj.getString("firstName"));
         user.setLasName(jsnobj.getString("firstName"));
         user.setUserName(jsnobj.getString("userName"));
-        user.setStatus(AppHandler .getUserStatus(jsnobj.getString("status")));
-        user.setPassword(password );
+        user.setStatus(AppHandler.getUserStatus(jsnobj.getString("status")));
+        user.setPassword(password);
         user.setTime();
         JSONArray jPermissionArray=jsnobj.getJSONArray("permissionList");
 
@@ -71,5 +74,35 @@ public class AppHandler {
         return user;
 
     }
+
+
+
+    public static boolean checkUserSession(SharedPreferences preferences, String layout) throws Exception{
+        boolean state = false;
+
+
+        if (preferences.contains("UserLoggedObj")) {
+
+            Gson gson = new Gson();
+            String json = preferences.getString("UserLoggedObj", "");
+
+
+
+
+            User user = gson.fromJson(json, User.class);
+
+            for(Permission permission:user.getPermissionList()){
+                if(permission.getpName().equals(layout)){
+                    state = true;
+                }
+            }
+           return state;
+        }
+        else{
+            return state;
+        }
+    }
+
+
 }
 

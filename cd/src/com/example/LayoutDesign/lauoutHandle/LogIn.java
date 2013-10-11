@@ -125,7 +125,9 @@ public class LogIn extends Activity {
                             prefsEditor.commit();
 
 
+                            if (appSharedPrefs .contains("UserLoggedObj")) {
                             startActivity(new Intent(LogIn.this, MyActivity.class));
+                            }
 
                         } else {
                             Toast loginError = Toast.makeText(getApplicationContext(), "Invalid user name or password\nUser Authentication failed", Toast.LENGTH_LONG);
