@@ -4,3 +4,6 @@
 # view AndroidManifest.xml #generated:10
 -keep class com.example.LayoutDesign.lauoutHandle.MyActivity { <init>(...); }
 
+# onClick res/layout/template_bar_logged.xml #generated:18
+-keepclassmembers class * { *** LoginBtnClick(...); }
+

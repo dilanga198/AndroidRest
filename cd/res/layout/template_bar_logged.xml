@@ -10,11 +10,15 @@
             android:layout_height="wrap_content"
             android:text="ANDROID REST CLIENT"
             android:id="@+id/bar_title" android:layout_gravity="center_horizontal|top" android:textStyle="bold"
-            android:textSize="15dip" android:paddingRight="60dip" android:paddingLeft="10dip" />
+            android:textSize="15dip" android:paddingRight="10dip" android:paddingLeft="10dip" />
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner" android:layout_gravity="center_horizontal|top" android:background="@color/button_bg_color"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Log in"
             android:id="@+id/bar_log" android:layout_gravity="center_horizontal|top" android:background="@color/button_bg_color" android:textColor="@color/button_text_color"
-            android:padding="5dip"/>
+            android:padding="5dip" android:onClick="LoginBtnClick"/>
 </LinearLayout>

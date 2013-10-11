@@ -1,8 +1,13 @@
 package com.example.LayoutDesign.lauoutHandle;
 
 
+import android.R;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 import com.example.LayoutDesign.userClasses.*;
 import com.google.gson.Gson;
 import org.json.JSONArray;
@@ -49,7 +54,7 @@ public class AppHandler {
             return User.STATUS.deactive;
     }
 
-    public static User convertJson2User(JSONObject jsnobj, String password) throws Exception{
+    public static User convertJson2User(JSONObject jsnobj, String password) throws Exception {
         User user = new User();
         user.setFistName(jsnobj.getString("firstName"));
         user.setLasName(jsnobj.getString("firstName"));
@@ -57,15 +62,15 @@ public class AppHandler {
         user.setStatus(AppHandler.getUserStatus(jsnobj.getString("status")));
         user.setPassword(password);
         user.setTime();
-        JSONArray jPermissionArray=jsnobj.getJSONArray("permissionList");
+        JSONArray jPermissionArray = jsnobj.getJSONArray("permissionList");
 
-        ArrayList<Permission> permissionList=new ArrayList<Permission>();
-        for(int i=0;i<jPermissionArray.length();i++){
+        ArrayList<Permission> permissionList = new ArrayList<Permission>();
+        for (int i = 0; i < jPermissionArray.length(); i++) {
             permissionList.add(
                     new Permission(
                             jPermissionArray.getJSONObject(i).getString("pName"),
                             jPermissionArray.getJSONObject(i).getString("description"))
-                            );
+            );
         }
         user.setPermissionList(permissionList);
         user.setLastActivityTime(jsnobj.getString("lastActivityTime"));
@@ -76,8 +81,7 @@ public class AppHandler {
     }
 
 
-
-    public static boolean checkUserSession(SharedPreferences preferences, String layout) throws Exception{
+    public static boolean checkUserSession(SharedPreferences preferences, String layout) throws Exception {
         boolean state = false;
 
 
@@ -85,22 +89,36 @@ public class AppHandler {
 
             Gson gson = new Gson();
             String json = preferences.getString("UserLoggedObj", "");
-
-
-
-
             User user = gson.fromJson(json, User.class);
 
-            for(Permission permission:user.getPermissionList()){
-                if(permission.getpName().equals(layout)){
+            for (Permission permission : user.getPermissionList()) {
+                if (permission.getpName().equals(layout)) {
                     state = true;
                 }
             }
-           return state;
-        }
-        else{
+            return state;
+        } else {
             return state;
         }
+    }
+
+    public static void initUserLayout(Button login, Spinner permissionList, SharedPreferences preferences, Context context) {
+        Gson gson = new Gson();
+        String json = preferences.getString("UserLoggedObj", "");
+        User user = gson.fromJson(json, User.class);
+
+        ArrayList<String> permissionStrings=new ArrayList<String>();
+        for(Permission name:user.getPermissionList()){
+            permissionStrings.add(name.getpName());
+        }
+
+
+        ArrayAdapter<String> arrayAdapter =
+                new ArrayAdapter<String>(context, R.layout.simple_list_item_1, permissionStrings);
+        arrayAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
+        permissionList.setAdapter(arrayAdapter);
+
+        login.setText("Log out");
     }
 
 

@@ -27,23 +27,24 @@ public class MyActivity extends Activity {
         try {
             if(AppHandler.checkUserSession(PreferenceManager.getDefaultSharedPreferences(MyActivity.this), "HOME")){
 
+              AppHandler.initUserLayout((Button)findViewById(R.id.bar_log),
+                                         (Spinner)findViewById(R.id.spinner),
+                                          PreferenceManager.getDefaultSharedPreferences(MyActivity.this),
+                                          this );
               title.setText("Changed");
             }
             else{
                 title.setText("Please log");
+                View spinner=findViewById(R.id.spinner);
+                spinner.setVisibility(View.GONE);
 
             }
         } catch (Exception e) {
             title.setText("err " +e.toString());
         }
+    }
 
-
-
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MyActivity.this, LogIn.class));
-            }
-        });
+    public void LoginBtnClick(View view){
+        startActivity(new Intent(MyActivity.this, LogIn.class));
     }
 }

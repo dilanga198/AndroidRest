@@ -9,11 +9,9 @@
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/userClasses/Permission.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/userClasses/UserLoggedObj.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/userClasses/User.class \
-/home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/lauoutHandle/MyActivity$1.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/lauoutHandle/LogIn$1.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/lauoutHandle/AppHandler.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/lauoutHandle/LogIn.class \
-/home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/lauoutHandle/LogIn$2.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/lauoutHandle/MyActivity.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/R$string.class \
 /home/nimantha/git/AndroidRest/cd/bin/classes/com/example/LayoutDesign/R.class \
